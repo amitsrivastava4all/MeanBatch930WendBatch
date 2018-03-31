@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angular Connect</title>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/factory.js"></script>
+    <script src="js/controller.js"></script>
+</head>
+
+<body ng-app="myapp" ng-controller="myctrl">
+    <h1>Angular Call Express</h1>
+    <h3>{{message}}</h3>
+    <table>
+        <tr>
+            <td>Userid</td>
+            <td><input type="text" ng-model="userid" placeholder="Type Userid Here"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" ng-model="pwd" placeholder="Type Password Here"></td>
+        </tr>
+        <tr>
+            <td>
+                <button ng-click="doLogin()">Login</button></td>
+            <td>
+                <button>Clear All</button>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
